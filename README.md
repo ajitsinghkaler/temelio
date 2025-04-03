@@ -20,15 +20,12 @@ You can run each of them without the docker file as well:
 python manage.py runserver 0.0.0.0:8000
 python manage.py process_tasks
 ```
-But for this application, I would recommend using the docker file as it will handle the dependencies and the database. Other wise intall poetry, install dependencies and run the migrations:
+But for this application, I would recommend using the docker file as it will handle the dependencies and the database. Otherwise install poetry, install dependencies and run the migrations:
 
 # Install poetry
 
 ```bash
 pip install poetry
-```
-
-```bash
 poetry install
 python manage.py migrate
 ```
